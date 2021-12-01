@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/fancybox.min.css">
+  <link rel="stylesheet" href="assets/css/aos.css">
+
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/include.js"></script>
+  <script src="assets/js/popmenu.js"></script>
+  <script src="assets/js/fancybox.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script>
+    document.getElementsByTagName("html")[0].className += " js";
+  </script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div w3-include-html="header.html"></div>
+  <!-- end of Header -->
+
+
+
+  <div class="about">
+
+    <!-- banner -->
+    <div class="banner-wrap">
+      <div class="banner-pic">
+        <a href="index.html">
+          <img id="bannerLogo" src="assets/images/layout/hair.png" alt="">
+        </a>
+      </div>
+      <div class="banner-title">About</div>
+    </div>
+    <!--END banner -->
+
+    <div class="about-wrap">
+      <div class="page-title">．關於我們．</div>
+
+      <div class="about-container container-wrap">
+
+        <div class="about-title">關於Salon Hair</div>
+
+        <div class="about-item">
+          <div class="about-item-txt" data-aos="fade-down-right" data-aos-duration="2000">
+            <div class="txt-cont">
+              店家故事：<br> 無論甚麼樣的髮質，都能在這裡擁有自己適合的風格，設計師的巧手和獨到的眼光，讓您在別人的眼光中，依舊有著最流行的髮型，擺脫沉重，盡情展現亮麗的自我！
+            </div>
+
+          </div>
+          <div class="about-item-pic" data-aos="fade-up-left" data-aos-duration="2000"> 
+            <img src="assets/images/about/about-img-1.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="about-item">
+          <div class="about-item-pic about-pic-pc" data-aos="fade-up-right" data-aos-duration="2000">
+            <img src="assets/images/about/about-img-2.jpg" alt="">
+          </div>
+          <div class="about-item-txt" data-aos="fade-down-left" data-aos-duration="2000">
+            <div class="txt-cont">
+              專業師資：<br>擁有英國沙宣證書與嚴格的訓練，每位設計師都以極純熟的美髮技術來設計最適合你的髮型，散發妳的個人魅力，從一進門就由專屬的設計師，從頭服務，不假他人之手。
+            </div>
+
+          </div>
+          <div class="about-item-pic about-pic-mobile" data-aos="fade-up-right" data-aos-duration="2000">
+            <img src="assets/images/about/about-img-2.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="about-item">
+          <div class="about-item-txt"  data-aos="fade-down-right" data-aos-duration="2000">
+            <div class="txt-cont">
+              頂級用料：<br>不惜成本採用頂級染膏、染燙後護髮等髮品，除了美麗更重視品質與健康，讓你不管是染髮或燙髮造型，完成後都能有最完美的造型，讓你享受物超所值的服務。
+            </div>
+
+          </div>
+          <div class="about-item-pic"  data-aos="fade-up-left" data-aos-duration="2000">
+            <img src="assets/images/about/about-img-3.jpg" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+  </div>
+
+  <!-- back to top -->
+  <a href="#" class="cd-top text-replace js-cd-top">
+    <div class="top-btn">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16"
+        xml:space="preserve">
+        <polygon points="8,2.8 16,10.7 13.6,13.1 8.1,7.6 2.5,13.2 0,10.7 " />
+      </svg>
+    </div>
+  </a>
+<!--End back to top -->
+
+
+  <!-- footer -->
+  <div w3-include-html="footer.html"></div>
+  <!-- end of footer -->
+
+
+  <script>
+    includeHTML();
+  </script>
+
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+      });
+
+      $(".zoom").hover(function () {
+
+        $(this).addClass('transition');
+      }, function () {
+
+        $(this).removeClass('transition');
+      });
+    });
+  </script>
+
+<script src="assets/js/navbar.js"></script>
+
+<script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

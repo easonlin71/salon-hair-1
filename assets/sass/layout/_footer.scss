@@ -1,0 +1,104 @@
+* {
+    // outline: .5px solid red;
+}
+
+.footer {
+
+    &-wrap {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+
+        &::after {
+            content: "";
+            background-position: center center;
+            background-size: cover;
+            position: absolute;
+            top: -80px;
+            bottom: -30px;
+            left: -30px;
+            right: -30px;
+            background-image: url(../images/layout/footer.jpg);
+         
+            background-color: rgba(138, 137, 137, 0.6);
+            
+            background-blend-mode: multiply;
+            filter: blur(5px);
+            z-index: -1;
+        }
+
+        padding: 40px 30px 0px;
+
+        &-cont {
+            display: flex;
+            justify-content: space-between;
+
+            @media(max-width:768px) {
+                display: block;
+            }
+
+        }
+    }
+
+    &-navbar {
+        width: 40%;
+
+        @media(max-width:768px) {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .item {
+            margin-bottom: 30px;
+
+            a {
+                color: #ffffff;
+            }
+        }
+    }
+
+    &-information {
+        width: 40%;
+
+        @media(max-width:768px) {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .social-software {
+            display: flex;
+
+            @media(max-width:768px) {
+                width: 120px;
+                margin: auto;
+            }
+
+            &-link {
+                margin-right: 30px;
+
+                img {
+                    width: 30px;
+                }
+            }
+        }
+
+        .contanct-cont {
+            color: #ffffff;
+            padding-top: 30px;
+
+            &-txt {
+                margin-bottom: 30px;
+
+                @media(max-width: 768px) {
+                    //    margin-bottom: 10px;
+                    line-height: 25px;
+                }
+            }
+
+            @media(max-width: 768px) {
+                text-align: center;
+            }
+        }
+    }
+}

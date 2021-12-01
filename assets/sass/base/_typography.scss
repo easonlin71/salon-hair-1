@@ -1,0 +1,612 @@
+// @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+// @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700,900&display=swap");
+
+// // $font-xs: 12px;
+// // $font-s: 14px;
+// // $font-m: 15px;
+// // $font-xm: 16px;
+// // $font-l: 17px;
+// // $font-xl: 18px;
+// // $font-mxl: 20px;
+// // $font-ml: 22px;
+// // $font-sl: 24px;
+// // $font-ssl: 25px;
+// // $font-lg: 28px;
+// $font-xs: 11px;
+// $font-s: 12px;
+// $font-m: 13px;
+// $font-xm: 16px;
+// $font-l: 15px;
+// $font-xl: 16px;
+// $font-mxl: 16px;
+// $font-ml: 18px;
+// $font-sl: 20px;
+// $font-ssl: 23px;
+// $font-lg: 26px;
+
+// body {
+//   font-family: "Noto Sans TC", sans-serif;
+//   font-size: $font-s;
+//   font-weight: 400;
+//   color: map-get($color, main-txt);
+//   letter-spacing: 1px;
+// }
+
+// .txt {
+//   &-header {
+//     color: #80807d;
+//     &-nav {
+//       font-size: $font-xl;
+//       font-weight: 500;
+//       letter-spacing: 1px;
+//       color: #80807d;
+//     }
+
+//     &-mobile {
+//       font-size: $font-m;
+//       color: #fff;
+//       &-link {
+//         font-size: $font-xl;
+//         // letter-spacing: 0.72px;
+//         color: #fff;
+//         font-weight: normal;
+//       }
+//       &-other {
+//         font-size: $font-xm;
+//         // letter-spacing: 0.64px;
+//         color: #AFB48E;
+//         // opacity: 0.59;
+//       }
+//       &-btn {
+//         font-size: $font-s;
+//         // letter-spacing: 1.4px;
+//         color: #fff;
+//       }
+//     }
+//   }
+//   &-footer {
+//     &-back {
+//       font-size: $font-s;
+//       font-weight: 400;
+//       // letter-spacing: 1.2px;
+//       color: map-get($color, white);
+//     }
+//     &-btn {
+//       font-size: $font-s;
+//       font-weight: 400;
+//       // letter-spacing: 1.2px;
+//       color: map-get($color, white);
+//     }
+//   }
+
+//   &-login {
+//     &-title {
+//       font-size: $font-xm;
+//       // letter-spacing: 1.6px;
+//       color: #80807d;
+//     }
+//     &-form {
+//       font-size: $font-m;
+//       // letter-spacing: 1.6px;
+//       color: #80807d;
+//     }
+//     &-btn {
+//       font-size: $font-xm;
+//       // letter-spacing: 1.6px;
+//     }
+//   }
+//   &-forgotpwd {
+//     &-title {
+//       font-size: $font-ml;
+//       font-weight: 500;
+//       // letter-spacing: 2.2px;
+//       color: map-get($color, main);
+//     }
+//     &-page-title {
+//       font-size: $font-ml;
+//       font-weight: 500;
+//       // letter-spacing: 2.2px;
+//       color: #80807d;
+//     }
+//     &-cont {
+//       font-size: $font-ml;
+//       // letter-spacing: 1.8px;
+//       color: map-get($color, main-txt);
+//     }
+//   }
+//   &-register {
+//     &-nav {
+//       font-size: $font-mxl;
+//       font-weight: 500;
+//       // letter-spacing: 2px;
+//       color: map-get($color, main);
+//     }
+//     &-title {
+//       font-size: $font-ml;
+//       font-weight: 500;
+//       // letter-spacing: 2px;
+//       color: #adadad;
+//     }
+//     &-form {
+//       &-title {
+//         font-size: $font-xm;
+//         // letter-spacing: 1.6px;
+//         color: #80807d;
+//       }
+//       &-cont {
+//         font-size: $font-m;
+//         // letter-spacing: 3px;
+//         color: map-get($color, main-txt);
+//       }
+//       &-point {
+//         font-size: $font-xs;
+//         // letter-spacing: 0.48px;
+//         color: map-get($color, main);
+//       }
+//     }
+//     &-check {
+//       font-size: $font-xm;
+//       // letter-spacing: 1.6px;
+//       color: #80807d;
+//     }
+
+//     &-cont {
+//       font-size: $font-xl;
+//       // letter-spacing: 1.8px;
+//       color: map-get($color, main-txt);
+//     }
+//     &-smsotp {
+//       &-title {
+//         font-size: $font-ml;
+//         // letter-spacing: 2.2px;
+//         color: map-get($color, main);
+//       }
+//       &-phone {
+//         font-size: $font-mxl;
+//         // letter-spacing: 2px;
+//         color: map-get($color, main);
+//       }
+//       &-captcha {
+//         &-title {
+//           font-size: $font-xm;
+//           // letter-spacing: 1.6px;
+//           color: map-get($color, main);
+//         }
+//         &-form {
+//           font-size: 35px;
+//           // letter-spacing: 3.5px;
+//           color: map-get($color, main);
+//         }
+//       }
+//     }
+//   }
+
+//   &-index {
+//     &-title {
+//       font-size: $font-sl;
+//       font-weight: 500;
+//       letter-spacing: 1px;
+//       color: map-get($color, main);
+//     }
+//     &-announcement {
+//       &-title {
+//         font-size: $font-ml;
+//         font-weight: 500;
+//         letter-spacing: 2.2px;
+//         color: map-get($color, main);
+//       }
+//       &-cont {
+//         font-size: $font-ml;
+//         font-weight: normal;
+//         letter-spacing: 2.2px;
+//         color: map-get($color, main);
+//       }
+//     }
+//     &-name {
+//       font-size: $font-xl;
+//       font-weight: 500;
+//       letter-spacing: 1.44px;
+//       color: map-get($color, main);
+//     }
+//     &-cont {
+//       font-size: $font-xl;
+//       font-weight: 500;
+//       letter-spacing: 1.44px;
+//       color: map-get($color, main-txt);
+//     }
+//   }
+//   &-porfile {
+//     &-title {
+//       font-size: $font-ml;
+//       font-weight: 500;
+//       letter-spacing: 2.2px;
+//       color: map-get($color, main);
+//     }
+//     &-phone {
+//       font-size: $font-ml;
+//       font-weight: 500;
+//       letter-spacing: 2.2px;
+//       color: map-get($color, main);
+//     }
+//     &-form {
+//       &-title {
+//         font-size: $font-xm;
+//         letter-spacing: 1.6px;
+//         color: #80807d;
+//       }
+//       &-cont {
+//         font-size: $font-m;
+//         letter-spacing: 3px;
+//         color: map-get($color, main-txt);
+//       }
+//     }
+//     &-address {
+//       &-title {
+//         font-size: $font-mxl;
+//         font-weight: 500;
+//         letter-spacing: 2px;
+//         color: map-get($color, main);
+//       }
+//       &-item {
+//         &-title {
+//           font-size: $font-xm;
+//           letter-spacing: 1.6px;
+//           color: map-get($color, main);
+//         }
+//         &-cont {
+//           font-size: $font-m;
+//           letter-spacing: 1.5px;
+//           color: map-get($color, main-txt);
+//         }
+//         &-check {
+//           font-size: $font-xm;
+//           letter-spacing: 1.6px;
+//           color: map-get($color, main-txt);
+//         }
+//       }
+//       &-add {
+//         &-title {
+//           font-size: $font-sl;
+//           letter-spacing: 3.36px;
+//           color: map-get($color, main);
+//         }
+//       }
+//       &-back {
+//         font-size: $font-xm;
+//         letter-spacing: 1.6px;
+//         color: map-get($color, main);
+//       }
+//       &-confirm {
+//         &-title {
+//           font-size: $font-sl;
+//           letter-spacing: 3.36px;
+//           color: map-get($color, main);
+//         }
+//         &-cont {
+//           font-size: $font-xl;
+//           letter-spacing: 1.8px;
+//           color: map-get($color, main-txt);
+//         }
+//       }
+//     }
+//   }
+
+//   &-transaction {
+//     &-history {
+//       &-title {
+//         font-size: $font-sl;
+//         letter-spacing: 2.4px;
+//         color: map-get($color, main);
+//       }
+//       &-cont {
+//         font-size: $font-xm;
+//         letter-spacing: 1.6px;
+//         color: map-get($color, main);
+//       }
+//       &-form {
+//         font-size: $font-s;
+//         letter-spacing: 1.4px;
+//         color: map-get($color, main);
+//       }
+//       &-btn {
+//         font-size: $font-m;
+//         letter-spacing: 1.5px;
+//       }
+//     }
+//     &-item {
+//       &-title {
+//         font-size: $font-xm;
+//         letter-spacing: 1.12px;
+//         font-weight: 400;
+//         color: map-get($color, main);
+//       }
+//       &-cont {
+//         font-size: $font-ml;
+//         letter-spacing: 0.48px;
+//         color: map-get($color, main-txt);
+//       }
+//     }
+//     &-delivered {
+//       &-title {
+//         font-size: $font-xm;
+//         font-weight: 500;
+//         letter-spacing: 1.12px;
+//         color: map-get($color, main);
+//       }
+//       &-cont {
+//         font-size: $font-sl;
+//         font-weight: 500;
+//         letter-spacing: 1.68px;
+//         color: map-get($color, main-txt);
+//       }
+//       &-product {
+//         &-title {
+//           font-size: $font-mxl;
+//           font-weight: 500;
+//           letter-spacing: 2px;
+//           color: map-get($color, main);
+//         }
+//         &-cont {
+//           font-size: $font-sl;
+//           letter-spacing: 2.4px;
+//           color: map-get($color, main-txt);
+//         }
+//       }
+//     }
+//   }
+//   &-redeem {
+//     &-title {
+//       font-size: $font-sl;
+//       font-weight: 500;
+//       letter-spacing: 3.36px;
+//       color: map-get($color, main);
+//     }
+//     &-product {
+//       &-name {
+//         font-size: $font-mxl;
+//         font-weight: 400;
+//         letter-spacing: 0.4px;
+//         color: map-get($color, main);
+//       }
+//       &-qty {
+//         font-size: $font-ssl;
+//         letter-spacing: 0.5px;
+//       }
+//     }
+
+//     &-date {
+//       &-product-name {
+//         font-size: $font-sl;
+//         font-weight: 500;
+//         letter-spacing: 3.36px;
+//         color: map-get($color, main);
+//       }
+//       &-total {
+//         font-size: $font-mxl;
+//         font-weight: 500;
+//         letter-spacing: 1.6px;
+//         color: map-get($color, main);
+//       }
+//       &-title {
+//         font-size: $font-ml;
+//         font-weight: 500;
+//         letter-spacing: 2.2px;
+//         color: map-get($color, main);
+//       }
+//       &-item {
+//         &-title {
+//           font-size: $font-ml;
+//           font-weight: 500;
+//           letter-spacing: 2.2px;
+//           color: map-get($color, main);
+//         }
+//         &-cont {
+//           font-size: $font-ml;
+//           letter-spacing: 2.2px;
+//           color: map-get($color, main);
+//         }
+//       }
+//     }
+//     &-location {
+//       &-title {
+//         font-size: $font-ml;
+//         font-weight: 500;
+//         letter-spacing: 2.2px;
+//         color: map-get($color, main);
+//       }
+//       &-address {
+//         &-title {
+//           font-size: $font-ml;
+//           font-weight: 500;
+//           letter-spacing: 2.2px;
+//           color: map-get($color, main);
+//         }
+//         &-cont {
+//           font-size: $font-ml;
+//           font-weight: 500;
+//           letter-spacing: 2.2px;
+//           color: #707070;
+//         }
+//       }
+//     }
+//     &-list {
+//       &-title {
+//         font-size: $font-ml;
+//         font-weight: 500;
+//         letter-spacing: 2.2px;
+//         color: map-get($color, main);
+//       }
+//       &-cont {
+//         font-size: $font-xm;
+//         letter-spacing: 1.28px;
+//         color: #707070;
+//       }
+//     }
+//     &-history {
+//       &-title {
+//         font-size: $font-sl;
+//         letter-spacing: 2.4px;
+//         font-weight: 400;
+//         color: map-get($color, main);
+//       }
+//       &-cont {
+//         font-size: $font-xm;
+//         letter-spacing: 1.6px;
+//         font-weight: 400;
+//         color: map-get($color, main);
+//       }
+//       &-form {
+//         font-size: $font-s;
+//         letter-spacing: 1.4px;
+//         color: map-get($color, main);
+//       }
+//       &-btn {
+//         font-size: $font-m;
+//         letter-spacing: 1.5px;
+//       }
+//       &-list {
+//         &-title {
+//           font-size: $font-xm;
+//           font-weight: 400;
+//           letter-spacing: 1.12px;
+//           color: map-get($color, main);
+//         }
+//         &-cont {
+//           font-size: $font-sl;
+//           letter-spacing: 0.48px;
+//           color: map-get($color, main-txt);
+//         }
+//       }
+//     }
+//   }
+
+//   &-sharing {
+//     &-title {
+//       font-size: $font-sl;
+//       font-weight: 500;
+//       letter-spacing: 3.36px;
+//       color: map-get($color, main);
+//     }
+//     &-product {
+//       &-title {
+//         font-size: $font-ml;
+//         font-weight: 500;
+//         letter-spacing: 2.2px;
+//         color: map-get($color, main);
+//       }
+//       &-cont {
+//         font-size: $font-sl;
+//         letter-spacing: 2.4px;
+//         color: map-get($color, main-txt);
+//       }
+//       &-point {
+//         font-size: $font-xl;
+//         font-weight: 500;
+//         letter-spacing: 1.8px;
+//         color: map-get($color, main);
+//       }
+//     }
+//     &-history {
+//       &-title {
+//         font-size: $font-sl;
+//         letter-spacing: 2.4px;
+//         color: map-get($color, main);
+//       }
+//       &-cont {
+//         font-size: $font-mxl;
+//         letter-spacing: 1.6px;
+//         color: map-get($color, main);
+//       }
+//       &-form {
+//         font-size: $font-s;
+//         letter-spacing: 1.4px;
+//         color: map-get($color, main);
+//       }
+//       &-btn {
+//         font-size: $font-m;
+//         letter-spacing: 1.5px;
+//       }
+//       &-list {
+//         &-title {
+//           font-size: $font-xm;
+//           font-weight: 400;
+//           letter-spacing: 1.12px;
+//           color: map-get($color, main);
+//         }
+//         &-cont {
+//           font-size: $font-sl;
+//           letter-spacing: 0.48px;
+//           color: map-get($color, main-txt);
+//         }
+//       }
+//     }
+//   }
+// }
+
+// // update the datepicker inside color
+// body{
+//   .daterangepicker {
+//     .drp-buttons {
+//       .btn{
+//         color: map-get($color, main);
+//         border: 1px solid map-get($color, main);
+//       }
+//       .btn:hover{
+//         color: #fff;
+//         background-color: map-get($color, main);
+//         border: 1px solid map-get($color, main);
+//       }
+//       .applyBtn {
+//         background-color: map-get($color, main) !important;
+//       }
+//       .applyBtn:hover {
+//         background-color: #fff !important;
+//         color: map-get($color, main) !important;
+//       }
+//     }
+//     td.active{
+//       td.active {
+//         background-color: map-get($color, main);
+//       }
+//       td.active:hover {
+//         background-color: map-get($color, main);
+//       }
+//     }
+//     td.available {
+//       color: map-get($color, main);
+//       // background-color: map-get($color, main);
+//     }
+//     td.in-range {
+//       color: #fff;
+//       background-color: map-get($color, light-bg);
+//     }
+//     td.start-date, td.start-date:hover, td.end-date, td.end-date:hover {
+//       color: #fff;
+//       background-color: map-get($color, main);
+//     }
+
+//     th.month {
+//       color: map-get($color, main);
+//     }
+
+//     .calendar-table {
+//       .next, .prev {
+//         span {
+//           color: map-get($color, main);
+//           border: solid map-get($color, main);
+//           border-width: 0 1px 1px 0;
+//         }
+//       }
+//       th:nth-child(1) {
+//         color: map-get($color, main);
+//       }
+//     }
+//   }
+// }
+
+// input,select{
+//   font-family: "Noto Sans TC", sans-serif;
+// }
+// input[type=password]{
+//   font-family: sans-serif;
+// }

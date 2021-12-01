@@ -1,0 +1,190 @@
+* {
+    // outline: .5px solid red;
+}
+
+.contact {
+
+    &-banner{
+        height: 300px;
+        overflow: hidden;
+        @media(max-width: 768px) {
+            height: 200px;
+        }
+        img{
+            width: 100%;
+            margin-top: -230px;
+            @media(max-width: 900px) {
+                margin-top: -150px;
+            }
+            @media(max-width: 768px) {
+                margin-top: -130px;
+            }
+            @media(max-width: 600px) {
+                margin-top: -90px;
+            }
+            @media(max-width: 500px) {
+                margin-top: -50px;
+            }
+            @media(max-width: 420px) {
+                margin-top: -20px;
+            }
+            @media(max-width: 363px) {
+                margin-top: 0px;
+            }
+            @media(max-width: 339px) {
+                margin-top: 10px;
+            }
+        }
+    }
+    &-txt {
+        text-align: center;
+        line-height: 5vh;
+        margin-bottom: 30px;
+    }
+
+    &-container {
+        margin-bottom: 10vh;
+
+        .contact-information {
+            width: 100%;
+            // display: flex;
+            max-width: 1000px;
+            margin: auto;
+            width: 95%;
+
+            @media(max-width: 768px) {
+                display: block;
+            }
+
+            &-cont {
+                // width: 65%;
+                background-color: #F7F2EA;
+                padding: 30px;
+
+                @media(max-width: 768px) {
+                    width: 100%;
+                }
+
+                .contanct-cont {
+                    color: #000000;
+                    padding-top: 30px;
+                    &-item {
+                        display: flex;
+                      justify-content: center;
+                        margin-bottom: 30px;
+                  
+                        .item-icon {
+                            width: 20px;
+                            
+                            img {
+                                width: 100%;
+                                height: 100%;
+
+                            }
+                        }
+                        .item-txt{
+                            padding-top: 3px;
+                            padding-left: 10px;
+                        }
+
+                        // @media(max-width: 768px) {
+                        //     //    margin-bottom: 10px;
+                        //     line-height: 25px;
+                        // }
+                    }
+
+                    @media(max-width: 768px) {
+                        text-align: center;
+                    }
+                }
+
+
+                .social-software-cont {
+                    display: flex;
+                    justify-content: space-around;
+                    width: 200px;
+                    margin: auto;
+
+                    // margin: auto;
+                    @media(max-width: 768px) {
+                        margin: auto;
+                    }
+
+                    .link {
+                        &-fb {
+                            svg {
+                                width: 30px;
+                                height: 30px;
+
+                                path {
+                                    fill: #010002;
+                                    //    fill: #9B7D54;
+
+                                }
+
+                                &:hover {
+                                    path {
+                                        // fill:#010002;
+                                        fill: #9B7D54;
+                                    }
+                                }
+                            }
+
+                        }
+
+                        &-instagrem {
+                            svg {
+                                width: 30px;
+                                height: 30px;
+
+                                path {
+                                    fill: #010002;
+                                    //    fill: #9B7D54;
+
+                                }
+
+                                &:hover {
+                                    path {
+                                        // fill:#010002;
+                                        fill: #9B7D54;
+                                    }
+                                }
+                            }
+                        }
+
+                        &-line {
+                            svg {
+                                width: 30px;
+                                height: 30px;
+
+                                path {
+                                    fill: #010002;
+                                    //    fill: #9B7D54;
+
+                                }
+
+                                &:hover {
+                                    path {
+                                        // fill:#010002;
+                                        fill: #9B7D54;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-map {
+
+                .googlemap {
+                    margin-top: 30px;
+                    width: 100%;
+                    height: 430px;
+                }
+            }
+
+           
+        }
+    }
+}

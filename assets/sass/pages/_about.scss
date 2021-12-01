@@ -1,0 +1,104 @@
+* {
+    // outline: .5px solid red;
+}
+
+.page-title {
+    font-size: 30px;
+    text-align: center;
+   margin-bottom: 10vh;
+   padding-bottom: 5vh;
+   border-bottom:#9B7D54 2px solid;
+}
+
+
+.about {
+    &-wrap {}
+
+    &-container {
+
+
+        .about-title {
+            font-size: 25px;
+            margin-bottom: 30px;
+            @media(max-width:768px) {
+               margin-bottom: 0;
+            }
+        }
+
+        .about-item {
+            display: flex;
+            // justify-content:space-around;
+            justify-content: center;
+            margin-bottom: 20vh;
+
+            @media(max-width:768px) {
+                display: block;
+                margin-bottom: 30px;
+            }
+
+            &-txt {
+                width: 40%;
+
+                font-size: 16px;
+                padding-top: 5vh;
+
+                @media(max-width:768px) {
+                    width: 100%;
+                    // margin-bottom: 20px;
+
+                }
+
+                .txt-cont {
+
+                    background-color: #F7F2EA;
+                   padding: 30px;
+
+                    line-height: 30px;
+
+                }
+            }
+
+            &-pic {
+                width: 60%;
+                height: 300px;
+                overflow: hidden;
+              
+                @media(max-width:768px) {
+                    width: 100%;
+                    overflow: visible;
+                    height: 100%;
+                    // height:30vh;
+                    
+                }
+
+                img {
+                    width: 100%;
+                    margin-top: -50px;
+                    // height: 100%;
+                    @media(max-width:1000px) {
+                      margin-top: 0;
+                    }
+                    @media(max-width:768px) {
+                      margin-top: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    &-pic {
+        &-mobile {
+            display: none;
+
+            @media(max-width:768px) {
+                display: block;
+            }
+        }
+
+        &-pc {
+            @media(max-width:768px) {
+                display: none;
+            }
+        }
+    }
+}
